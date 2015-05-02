@@ -1,0 +1,4 @@
+#! /bin/bash
+
+docker kill kamon-grafana-dashboard
+docker rm kamon-grafana-dashboard

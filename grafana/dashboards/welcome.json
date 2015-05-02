@@ -10,13 +10,13 @@
           "includeAll": false,
           "options": [
             {
-              "text": "kamon",
-              "value": "kamon"
+              "text": "example",
+              "value": "example"
             }
           ],
           "current": {
-            "text": "kamon",
-            "value": "kamon"
+            "text": "example",
+            "value": "example"
           }
         },
         {
@@ -25,13 +25,13 @@
           "query": "stats.timers.*.*",
           "options": [
             {
-              "text": "localhost",
-              "value": "localhost"
+              "text": "macpro",
+              "value": "macpro"
             }
           ],
           "current": {
-            "text": "localhost",
-            "value": "localhost"
+            "text": "macpro",
+            "value": "macpro"
           }
         }
       ],
@@ -134,15 +134,15 @@
           },
           "targets": [
             {
-              "target": "aliasByNode(stats.timers.[[Application]].[[Host]].actor.*.processing-time.count,5)",
+              "target": "aliasByNode(stats.timers.[[Application]].[[Host]].akka-actor.*.processing-time.count,5)",
               "hide": false
             }
           ],
           "aliasColors": {},
           "aliasYAxis": {
-            "stats.timers.kamon.localhost.actor.user-simple-service-actor.processing-time.mean_90": 2,
-            "scale(stats.timers.kamon.localhost.actor.user-simple-service-actor.processing-time.mean_90,0.001)": 2,
-            "stats.timers.kamon.localhost.actor.user-simple-service-actor.processing-time.mean": 2,
+            "stats.timers.example.macpro.akka-actor.user-simple-service-actor.processing-time.mean_90": 2,
+            "scale(stats.timers.example.macpro.akka-actor.user-simple-service-actor.processing-time.mean_90,0.001)": 2,
+            "stats.timers.example.macpro.akka-actor.user-simple-service-actor.processing-time.mean": 2,
             "Route Processing Time": 2,
             "user-simple-service-actor": 1,
             "user-simple-service-actor processing. time": 2,
@@ -214,7 +214,7 @@
           },
           "targets": [
             {
-              "target": "aliasByNode(stats.timers.[[Application]].[[Host]].actor.*.mailbox-size.mean,5)"
+              "target": "aliasByNode(stats.timers.[[Application]].[[Host]].akka-actor.*.mailbox-size.mean,5)"
             }
           ],
           "aliasColors": {},
@@ -277,7 +277,7 @@
           },
           "targets": [
             {
-              "target": "aliasByNode(scale(stats.timers.[[Application]].[[Host]].actor.*.time-in-mailbox.mean,0.001),5)"
+              "target": "aliasByNode(scale(stats.timers.[[Application]].[[Host]].akka-actor.*.time-in-mailbox.mean,0.001),5)"
             }
           ],
           "aliasColors": {},
@@ -351,15 +351,15 @@
           },
           "targets": [
             {
-              "target": "aliasByNode(scale(stats.timers.[[Application]].[[Host]].actor.*.processing-time.mean,0.001),5)",
+              "target": "aliasByNode(scale(stats.timers.[[Application]].[[Host]].akka-actor.*.processing-time.mean,0.001),5)",
               "hide": false
             }
           ],
           "aliasColors": {},
           "aliasYAxis": {
-            "stats.timers.kamon.localhost.actor.user-simple-service-actor.processing-time.mean_90": 2,
-            "scale(stats.timers.kamon.localhost.actor.user-simple-service-actor.processing-time.mean_90,0.001)": 2,
-            "stats.timers.kamon.localhost.actor.user-simple-service-actor.processing-time.mean": 2,
+            "stats.timers.example.macpro.akka-actor.user-simple-service-actor.processing-time.mean_90": 2,
+            "scale(stats.timers.example.macpro.akka-actor.user-simple-service-actor.processing-time.mean_90,0.001)": 2,
+            "stats.timers.example.macpro.akka-actor.user-simple-service-actor.processing-time.mean": 2,
             "Route Processing Time": 2,
             "user-simple-service-actor": 1,
             "user-simple-service-actor processing. time": 2,
